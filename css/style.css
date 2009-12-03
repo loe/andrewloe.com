@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*:active, *:focus {
+  outline: none;
+}
+
+html, body {
+  background: #ddd;
+}
+
+body {
+  background: #fff;
+  padding: 0.1em 1em 0.1em 0;
+  font-family: Helvetica;
+  font-size: 56px;
+  color: #000;
+  border-left: 6px solid #993300;
+}
+
+h1 {
+  margin-left: 0.5em;
+}
+
+h1 a {
+  text-decoration: none;
+  letter-spacing: -8px;
+  margin: 0.1em 0 0;
+  color: #222;
+}
+
+h1 a span {
+  color: #eee;
+  display: inline-block;
+  margin-left: 5px;
+}
+
+#links {
+  margin: 2 em 0;
+}
+
+#attributes li {
+  letter-spacing: -5px;
+  margin-right: 0.8em;
+  font-weight: bold;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+#links {
+  margin: 1em 0;
+  font-size: 30px;
+}
+
+#links li {
+  margin-bottom: 0px;
+  display: block;
+}
+
+li a {
+  font-weight: bold;
+  color: #000;
+  text-decoration: none;
+  padding: 0.3em 0.2em 0.3em 1.7em;
+  margin-left: -0.3em;
+  display: block;
+  text-transform: lowercase;
+  font-size: 52px;
+  letter-spacing: -2px;
+}
+
+li a:hover {
+  padding-left: 1.6em;
+  border-left: 0.1em solid #ddd;
+  background: #222;
+  color: #eee;
+}
+
+li.focus a {
+  text-decoration: underline;
+}
+
+li a:active {
+  background: #000;
+  color: #fff;
+}
+
+li a span {
+  margin-right: 0.2em;
+  color: #fff;
+  font-size: 0.5em;
+  letter-spacing: 0px;
+}
+
+li a:hover span {
+  color: #333;
+}
