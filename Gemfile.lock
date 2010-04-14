@@ -1,0 +1,13 @@
+--- 
+dependencies: 
+  rack: 
+    group: 
+    - :default
+    version: ">= 0"
+specs: 
+- rack: 
+    version: 1.1.0
+hash: dd2ac2a3ea17f3c7f8b668666a11e465371fe557
+sources: 
+- Rubygems: 
+    uri: http://gemcutter.org
