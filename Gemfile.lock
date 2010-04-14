@@ -1,5 +1,9 @@
 --- 
 dependencies: 
+  rack-pony: 
+    group: 
+    - :default
+    version: ">= 0"
   rack: 
     group: 
     - :default
@@ -7,7 +11,9 @@ dependencies:
 specs: 
 - rack: 
     version: 1.1.0
-hash: dd2ac2a3ea17f3c7f8b668666a11e465371fe557
+- rack-pony: 
+    version: 1.0.0
+hash: 7177a0025fd7c80f4b7e0caf1707ee2c2a214e7b
 sources: 
 - Rubygems: 
     uri: http://gemcutter.org

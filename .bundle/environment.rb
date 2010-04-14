@@ -143,10 +143,11 @@ end
 
 module Bundler
   LOCKED_BY    = '0.9.13'
-  FINGERPRINT  = "dd2ac2a3ea17f3c7f8b668666a11e465371fe557"
-  AUTOREQUIRES = {:default=>[["rack", false]]}
+  FINGERPRINT  = "7177a0025fd7c80f4b7e0caf1707ee2c2a214e7b"
+  AUTOREQUIRES = {:default=>[["rack", false], ["rack-pony", false]]}
   SPECS        = [
         {:load_paths=>["/Users/Andrew/.rvm/gems/ree-1.8.7-2009.10/gems/rack-1.1.0/lib"], :loaded_from=>"/Users/Andrew/.rvm/gems/ree-1.8.7-2009.10/specifications/rack-1.1.0.gemspec", :name=>"rack"},
+        {:load_paths=>["/Users/Andrew/.rvm/gems/ree-1.8.7-2009.10/gems/rack-pony-1.0.0/lib"], :loaded_from=>"/Users/Andrew/.rvm/gems/ree-1.8.7-2009.10/specifications/rack-pony-1.0.0.gemspec", :name=>"rack-pony"},
       ].map do |hash|
     if hash[:virtual_spec]
       spec = eval(hash[:virtual_spec], binding, "<virtual spec for '#{hash[:name]}'>")
