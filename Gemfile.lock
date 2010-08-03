@@ -1,9 +1,5 @@
 --- 
 dependencies: 
-  rack-pony: 
-    group: 
-    - :default
-    version: ">= 0"
   rack: 
     group: 
     - :default
@@ -11,9 +7,7 @@ dependencies:
 specs: 
 - rack: 
     version: 1.2.1
-- rack-pony: 
-    version: 1.0.0
-hash: 2878488f1a46601caacc8c63e2a002cd00096cd4
+hash: 16799ee1e258bc41be3d665194a198e06af77a87
 sources: 
 - Rubygems: 
     uri: http://rubygems.org/
