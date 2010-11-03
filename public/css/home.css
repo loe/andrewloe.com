@@ -80,10 +80,6 @@ li a:hover {
   color: #eee;
 }
 
-li.focus a {
-  text-decoration: underline;
-}
-
 li a:active {
   background: #000;
   color: #fff;
