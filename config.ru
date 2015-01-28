@@ -1,3 +1,5 @@
+use Rack::ConditionalGet
+use Rack::ETag
 use Rack::Static,
   :urls => ["/stylesheets", "/favicon.ico", "/robots.txt"],
   :root => "public"
