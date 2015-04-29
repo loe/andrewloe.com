@@ -1,3 +1,4 @@
+use NewRelic::Rack::AgentHooks
 use Rack::ConditionalGet
 use Rack::ETag
 use Rack::Static,
