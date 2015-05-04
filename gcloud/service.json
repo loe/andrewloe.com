@@ -1,12 +1,12 @@
 {
-  "id": "andrewloe-com-service",
-  "kind": "Service",
-  "apiVersion": "v1beta1",
-  "selector": {
-    "name": "frontend"
-  },
-  "containerPort": 80,
-  "protocol": "TCP",
-  "port": 80,
-  "createExternalLoadBalancer": true
+    "apiVersion": "v1beta1",
+    "containerPort": 80,
+    "createExternalLoadBalancer": true,
+    "id": "andrewloe-com-service",
+    "kind": "Service",
+    "port": 80,
+    "protocol": "TCP",
+    "selector": {
+        "name": "frontend"
+    }
 }

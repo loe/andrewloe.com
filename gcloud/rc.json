@@ -1,24 +1,43 @@
 {
-  "id": "andrewloe-com-controller",
-  "kind": "ReplicationController",
-  "apiVersion": "v1beta1",
-  "desiredState": {
-    "replicas": 1,
-    "replicaSelector": {"name": "frontend"},
-    "podTemplate": {
-      "desiredState": {
-        "manifest": {
-          "version": "v1beta1",
-          "id": "andrewloe-com-frontend",
-          "containers": [{
-            "name": "andrewloe-com",
-            "image": "waloeiii/andrewloe-com",
-            "ports": [{"containerPort": 80, "hostPort": 9292}],
-            "env":[{"name": "RACK_ENV", "value": "production"}]
-          }]
-        }
-      },
-      "labels": {"name": "frontend"}
-    }},
-  "labels": {"name": "serving"}
+    "apiVersion": "v1beta1",
+    "desiredState": {
+        "podTemplate": {
+            "desiredState": {
+                "manifest": {
+                    "containers": [
+                        {
+                            "env": [
+                                {
+                                    "name": "RACK_ENV",
+                                    "value": "production"
+                                }
+                            ],
+                            "image": "waloeiii/andrewloe-com",
+                            "name": "andrewloe-com",
+                            "ports": [
+                                {
+                                    "containerPort": 80,
+                                    "hostPort": 9292
+                                }
+                            ]
+                        }
+                    ],
+                    "id": "andrewloe-com-frontend",
+                    "version": "v1beta1"
+                }
+            },
+            "labels": {
+                "name": "frontend"
+            }
+        },
+        "replicaSelector": {
+            "name": "frontend"
+        },
+        "replicas": 1
+    },
+    "id": "andrewloe-com-controller",
+    "kind": "ReplicationController",
+    "labels": {
+        "name": "serving"
+    }
 }
