@@ -27,12 +27,11 @@
                 }
             },
             "labels": {
-                "app": "andrewloe-com"
+                "app": "andrewloe-com",
                 "name": "andrewloe-com-frontend"
             }
         },
         "replicaSelector": {
-            "app": "andrewloe-com"
             "name": "andrewloe-com-frontend"
         },
         "replicas": 1
@@ -40,8 +39,7 @@
     "id": "andrewloe-com-controller",
     "kind": "ReplicationController",
     "labels": {
-        "app": "andrewloe-com"
+        "app": "andrewloe-com",
         "name": "andrewloe-com-rc"
-        
     }
 }
