@@ -1,0 +1,22 @@
+{
+  "id": "andrewloe-com",
+  "kind": "Pod",
+  "apiVersion": "v1beta1",
+  "desiredState": {
+    "manifest": {
+      "version": "v1beta1",
+      "containers": [{
+        "name": "andrewloe-com",
+        "image": "waloeiii/andrewloe-com",
+        "ports": [{
+          "containerPort": 5000,
+          "hostPort": 80
+        }],
+        "environment": {
+          "PORT": "5000",
+          "RACK_ENV": "production"
+        }
+      }]
+    }
+  }
+}
