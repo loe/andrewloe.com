@@ -1,0 +1,12 @@
+{
+  "id": "andrewloe-com-service",
+  "kind": "Service",
+  "apiVersion": "v1beta1",
+  "selector": {
+    "name": "frontend"
+  },
+  "containerPort": 80,
+  "protocol": "TCP",
+  "port": 80,
+  "createExternalLoadBalancer": true
+}

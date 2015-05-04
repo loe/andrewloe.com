@@ -1,0 +1,24 @@
+{
+  "id": "andrewloe-com-controller",
+  "kind": "ReplicationController",
+  "apiVersion": "v1beta1",
+  "desiredState": {
+    "replicas": 1,
+    "replicaSelector": {"name": "frontend"},
+    "podTemplate": {
+      "desiredState": {
+        "manifest": {
+          "version": "v1beta1",
+          "id": "andrewloe-com-frontend",
+          "containers": [{
+            "name": "andrewloe-com",
+            "image": "waloeiii/andrewloe-com",
+            "ports": [{"containerPort": 80, "hostPort": 9292}],
+            "env":[{"name": "RACK_ENV", "value": "production"}]
+          }]
+        }
+      },
+      "labels": {"name": "frontend"}
+    }},
+  "labels": {"name": "serving"}
+}
