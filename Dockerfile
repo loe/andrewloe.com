@@ -1,2 +1,2 @@
 FROM ruby:2.2-onbuild
-CMD puma -p $PORT -e $RACK_ENV
+CMD puma -p 9292 -e $RACK_ENV
