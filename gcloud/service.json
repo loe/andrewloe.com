@@ -1,6 +1,6 @@
 {
     "apiVersion": "v1beta1",
-    "containerPort": 80,
+    "containerPort": 9292,
     "createExternalLoadBalancer": true,
     "id": "andrewloe-com-service",
     "kind": "Service",

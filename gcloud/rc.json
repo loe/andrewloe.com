@@ -17,8 +17,7 @@
                             "name": "andrewloe-com",
                             "ports": [
                                 {
-                                    "containerPort": 9292,
-                                    "hostPort": 80 
+                                    "containerPort": 9292
                                 }
                             ]
                         }
