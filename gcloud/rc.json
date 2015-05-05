@@ -41,6 +41,6 @@
     "kind": "ReplicationController",
     "labels": {
         "app": "andrewloe-com",
-        "name": "andrewloe-com-rc"
+        "name": "andrewloe-com-controller"
     }
 }
