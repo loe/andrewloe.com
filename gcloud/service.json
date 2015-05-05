@@ -1,10 +1,10 @@
 {
     "apiVersion": "v1beta1",
-    "containerPort": 9292,
+    "containerPort": "puma-server",
     "createExternalLoadBalancer": true,
     "id": "andrewloe-com-service",
     "kind": "Service",
-    "port": 9292,
+    "port": 80,
     "protocol": "TCP",
     "selector": {
         "name": "andrewloe-com-frontend"

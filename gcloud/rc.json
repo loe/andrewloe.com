@@ -17,7 +17,8 @@
                             "name": "andrewloe-com",
                             "ports": [
                                 {
-                                    "containerPort": 9292
+                                    "containerPort": 9292,
+                                    "name": "puma-server"
                                 }
                             ]
                         }
