@@ -12,7 +12,8 @@
                                     "value": "production"
                                 }
                             ],
-                            "image": "waloeiii/andrewloe-com",
+                            "image": "waloeiii/andrewloe-com:latest",
+                            "imagePullPolicy": "PullAlways",
                             "name": "andrewloe-com",
                             "ports": [
                                 {
